@@ -1,0 +1,29 @@
+The dataset contains observational data of 201 patient from 4 groups: 
+- 1- HIV-positive with tuberculous meningitis (HIV pos - TBM)
+- 2- HIV-positive with cryptococcal meningitis (HIV pos - CM)
+- 3- HIV neg - TBM 
+- 4- HIV neg - CM
+
+
+Variables:
+- code      - Patient identifier
+- hiv       - 0=HIV negative, 1=HIV positive
+- diagnosis - CM or TBM
+- group     - 1 to 4 (see above)
+- age
+- sex       - 1=male, 2=female
+- groupLong - Longer group description
+- bldwcc    - White cell count in blood (10^3/mm3)
+- bldneut   - Neutrophil count in blood
+- bldlym    - Lymphocyte count in blood
+- csfwcc    - White cell count in CSF
+- csfneut   - Neutrophil count in CSF
+- csflym    - Lymphocyte count in CSF 
+
+
+-----
+Data source: Dr. Estee Torok <estee.torok@gmail.com>
+
+Disclaimer: 
+This data is for OUCRU teaching purposes only and may contain "didactic" modifications to the original dataset.
+Distribution of the data or usage outside of the course not allowed without prior approval.  
