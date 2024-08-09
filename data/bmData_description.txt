@@ -1,0 +1,26 @@
+The dataset contains selected variables from 300 patients with confirmed bacerial meningitis who were randomized to adjunctive dexamethasone therapy or placebo.
+
+Variables:
+
+Baseline:
+- patId   - Unique patient identification
+- group   - "dexamethasone" or "placebo"
+- age
+- sex
+- gcs     - Glasgow coma score: ranges from 3 (deep coma) to 15 
+	    (normal neurological status)
+- paresis - 0=no, 1=yes
+- op.csf  - CSF opening pressure (cm)
+- wc.csf  - CSF total whice cell count (per mm3)
+- glu.csf - CSF glucose (mg/dl)
+
+Follow-up:
+- wc.csf.fup - CSF total whice cell count (per mm3) measured on day 2 or 3 of follow-up
+- death.6mo  - Survival status at 6 months of follow-up (0=alive, 1=dead)
+
+-----
+Data source: Dr. Mai Nguyen Thi Hoang <mainth@oucru.org>
+
+Disclaimer: 
+This data is for OUCRU teaching purposes only and may contain "didactic" modifications to the original dataset.
+Distribution of the data or usage outside of the course not allowed without prior approval.  

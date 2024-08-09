@@ -1,0 +1,11 @@
+Results from a hypothetical trial comparing a new procalcitonin(biomarker)-guided antibiotics administration versus antibiotics administration according to standard of care in patients admitted to hospital with lower respiratory tract infections. The dataset contains data from 442 patients. 
+
+Variables are: 
+- patid: Unique patient id
+- pct: Procalcitonin, measured at admission
+- proADM: proADM (another biomarker), measured at admission
+- group: randomized arm: Control or PCT (procalcitonin guidance)
+- AByn: antibiotics prescription: yes or no [primary endpoint]
+- LOS: Length of hospital stay (days) [secondary endpoint]
+
+Note: The data are a subset from trial data of a real RCT with some noise added to protect the original data. 

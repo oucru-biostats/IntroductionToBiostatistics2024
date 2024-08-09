@@ -1,0 +1,16 @@
+The dataset contains data from 853 patients with suspicion of dengue. A patient was classified as acute dengue by the reference test (gold standard) if there was RT-PCR detection of DENV RNA in plasma, and/or viral culture and/or serological changes in DENV reactive IgM or IgG levels in paired plasma specimens.  
+
+Variables:
+- studyNo      - Unique patient identification
+- dayOfIllness - Day of illness
+- dengue       - Dengue according to reference test (gold standard): yes or no
+- serotype     - Dengue serotype
+- ns1          - NS1 ELISA assay test result: posive or negative 
+
+-----
+Data soMsce: Dr. Hang Vu Thi Ty <hangvtt@oucru.org> and 
+	     Dr. Cameron Simmons <csimmons@oucru.org> 
+
+Disclaimer: 
+This data is for OUCRU teaching purposes only and may contain "didactic" modifications to the original dataset.
+Distribution of the data or usage outside of the course not allowed without prior approval.  

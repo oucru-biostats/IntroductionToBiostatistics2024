@@ -1,0 +1,30 @@
+The dataset contains observational data of 1207 children with DSS in the DF cohort. 
+
+Variables:
+- st_no		: Patient study number
+- profound	: Profound DSS (Yes, No)
+- reshock	: Recurrent shock (Yes, No)
+- year		: Year of enrolment
+- sys_bp	: Systolic blood pressure at enrolment (mmHg)
+- dia_bp	: Diastolic blood pressure at enrolment (mmHg)
+- pp		: Pulse pressure at enrolment (mmHg)
+- age		: Age at enrolment (year)
+- sex		: Gender (Female, Male)
+- wt 		: Weight at enrolment (kg)
+- day_ill  	: Day of illness at enrolment
+- temp		: Temperature at enrolment (0C)
+- pulse		: Pulse rate at enrolment (count per minute)
+- hemo		: Hemodynamic index at enrolment (1, 2, 3)
+- bleeding	: Type of bleeding at enrolment (None, Skin, Mucose)
+- abtend	: Abdominal tenderness at enrolment (Yes, No)
+- liver		: Liver size at enrolment
+- hct		: Haematocrit level at enrolment (%)
+- plt		: Platelet count at enrolment (cells/mm3)
+
+
+-----
+Data source: Dr. Bridget Wills <bwills@oucru.org>
+
+Disclaimer: 
+This data is for OUCRU teaching purposes only and may contain "didactic" modifications to the original dataset.
+Distribution of the data or usage outside of the course not allowed without prior approval.  

@@ -1,0 +1,12 @@
+The file perulung.csv contains data from a study of lung function among 636 children aged 7 to 10 years living in a deprived suburb of Lima, Peru.
+The data is taken from the book by Kirkwood and Sterne: Essential Medical Statistics and has been downloaded from http://www.blackwellpublishing.com/essentialmedstats
+
+
+Variables:
+- id      - Patient identifier
+- fev1    - maximum volume of air a child could breathe out in 1 second measured 
+	    using a spirometer (forced expiratory volume, litres/1 second) 
+- age     - age (years)
+- height  - height (cm)
+- sex     - sex (0=female, 1=male)
+- respsymptoms - respiratory symptoms in previous 12 months (0=no, 1=yes) 
