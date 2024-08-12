@@ -1,0 +1,19 @@
+---
+title: A simple list of files
+format: 
+    html:
+        embed-resources: true
+        minimal: true
+
+---
+
+```{r}
+#| output: asis
+x = list.files(pattern='html$', recursive=TRUE)
+xnames = basename(x)
+x <- x[xnames!='index.html']
+xnames <- xnames[xnames!='index.html']
+for (i in seq_along(x)){
+    cat(paste0('<p><a href="', x[i], '" target="_blank">', xnames[i],'</a></p>'))
+} 
+```
