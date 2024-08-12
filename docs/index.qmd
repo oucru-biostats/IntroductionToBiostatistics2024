@@ -4,6 +4,10 @@ format:
     html:
         embed-resources: true
         minimal: true
+execute: 
+  cache: false
+  echo: false
+  message: false
 
 ---
 
