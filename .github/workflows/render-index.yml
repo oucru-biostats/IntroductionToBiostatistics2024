@@ -37,11 +37,17 @@ jobs:
             any::knitr
             any::rmarkdown
 
-      - run: ls
+      # Change dir to doc
+      - run: cd docs
         
       # Runs a single command using the runners shell
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
         with:
           to: html # If set, it will be equivalent to `quarto render --to html`
-          path: docs/index.qmd
+          path: index.qmd
+
+
+      # Commit the change
+      - name: commit
+      - uses: GuillaumeFalourd/git-commit-push@v1.3
