@@ -42,7 +42,7 @@ jobs:
         uses: quarto-dev/quarto-actions/render@v2
         with:
           to: html # If set, it will be equivalent to `quarto render --to html`
-          path: index.qmd
+          path: docs/index.qmd
 
       # Commit the change
       - name: commit
