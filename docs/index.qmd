@@ -25,7 +25,7 @@ execute:
     a {
         color: #fff;
         text-decoration: none;
-        transition: transform .2s;
+        transition: all .5s;
     }
     a:hover{
         color: #fff;   
