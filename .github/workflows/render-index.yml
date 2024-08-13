@@ -50,4 +50,4 @@ jobs:
 
       # Commit the change
       - name: commit
-      - uses: GuillaumeFalourd/git-commit-push@v1.3
+        uses: GuillaumeFalourd/git-commit-push@v1.3
