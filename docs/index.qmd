@@ -25,10 +25,12 @@ execute:
     a {
         color: #fff;
         text-decoration: none;
+        transition: transform .2s;
     }
     a:hover{
         color: #fff;   
         font-weight: 800; 
+        transform: scale(1.5);
     }
 </style>
 
