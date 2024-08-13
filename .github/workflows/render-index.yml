@@ -25,6 +25,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
+      # Set-up quarto
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
       # Runs a single command using the runners shell
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
