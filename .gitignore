@@ -45,3 +45,6 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Quarto ext
+_extensions/

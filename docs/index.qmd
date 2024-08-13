@@ -15,6 +15,26 @@ filter:
 
 ---
 
+<style>
+    body{
+        font-family: Arial;
+        size: 12pt;
+        padding: 5vw 5vh;
+        background-color: rgb(0, 34, 71);
+        color: #fff;
+    }
+    a {
+        color: #fff;
+        text-decoration: none
+    }
+    a:hover{
+        color: #fff;
+    }
+</style>
+
+
+<div style="display:block; height:100px; width: 100%"></div>
+
 ```{r}
 #| output: asis
 #| include: false
@@ -22,7 +42,7 @@ filter:
 x = list.files(pattern='html$', recursive=TRUE)
 xnames = basename(x)
 x <- x[xnames!='index.html']
-xnames <- xnames[xnames!='index.html']
+xnames <- xnames[xnames!='index.html'] |> gsub('.html', '', x=_)
 for (i in seq_along(x)){
     cat(paste0('<p><a href="', x[i], '" target="_blank">', xnames[i],'</a></p>'))
 } 
@@ -40,3 +60,5 @@ for (i in seq_along(x)){
     cat(paste0('<p><a href="', x[i], '" target="_blank">', xnames[i],'</a></p>'))
 } 
 ```
+
+<img src='https://www.oucru.org/wp-content/uploads/2022/10/oucru_light.png' width=100 style="position:absolute; bottom: 50px; left:100px">
