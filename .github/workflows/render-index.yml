@@ -36,9 +36,6 @@ jobs:
           packages:
             any::knitr
             any::rmarkdown
-
-      # Change dir to doc
-      - run: cd docs
         
       # Runs a single command using the runners shell
       - name: Render Quarto Project
@@ -46,7 +43,6 @@ jobs:
         with:
           to: html # If set, it will be equivalent to `quarto render --to html`
           path: index.qmd
-
 
       # Commit the change
       - name: commit
