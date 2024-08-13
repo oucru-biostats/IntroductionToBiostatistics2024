@@ -1,18 +1,37 @@
 ---
-title: A simple list of files
+title: Introduction to Biostatistics 2024
+author: Biostatistics Group - OUCRU
 format: 
     html:
         embed-resources: true
         minimal: true
 execute: 
-  cache: false
-  echo: false
-  message: false
+    cache: false
+    echo: false
+    message: false
+filter:
+    - webr
+
 
 ---
 
 ```{r}
 #| output: asis
+#| include: false
+#| eval: false 
+x = list.files(pattern='html$', recursive=TRUE)
+xnames = basename(x)
+x <- x[xnames!='index.html']
+xnames <- xnames[xnames!='index.html']
+for (i in seq_along(x)){
+    cat(paste0('<p><a href="', x[i], '" target="_blank">', xnames[i],'</a></p>'))
+} 
+```
+
+
+```{r}
+#| output: asis
+#| autorun: true 
 x = list.files(pattern='html$', recursive=TRUE)
 xnames = basename(x)
 x <- x[xnames!='index.html']
