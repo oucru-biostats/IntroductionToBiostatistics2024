@@ -29,6 +29,12 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages:
+            any::knitr
+            any::rmarkdown
+
       # Runs a single command using the runners shell
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
