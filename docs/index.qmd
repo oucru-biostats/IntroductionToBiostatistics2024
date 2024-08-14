@@ -25,16 +25,25 @@ execute:
     a {
         color: #fff;
         text-decoration: none;
-        transition: all linear .5s;
+        transition: border linear .2s;
+        margin-left: -10px;
+        padding-left: 10px;
+        border-left: 3px solid transparent;
     }
     a:hover{
+        border-color: #fff;
+        padding-left: 10px;
         color: #fff;   
-        font-weight: 800; 
         transform: scale(1.5);
+    }
+    a:active{
+        color: #a7a7a7;
+        border-color: #a7a7a7;
     }
 </style>
 
 <div style='display:block; width: 100%; height: 2px; background: #fff; margin-bottom: 100px;'></div>
+
 
 ```{r}
 #| output: asis
@@ -42,11 +51,16 @@ x = list.files(pattern='html$', recursive=TRUE)
 xnames = basename(x)
 x <- x[xnames!='index.html']
 xnames <- xnames[xnames!='index.html'] |> gsub('.html', '', x=_, fixed=TRUE)
+xtitles <- sapply(x, 
+    \(each){
+        lines <- readLines(x, n=20)
+        title <- grep("<title>", lines, fixed=TRUE, value=TRUE)[[1]] |> gsub('</?title>', '', x=_)
+        title
+    }) 
 for (i in seq_along(x)){
-    cat(paste0('<p><a href="', x[i], '" target="_blank">', xnames[i],'</a></p>'))
+    cat(paste0('<p><a href="', x[i], '" target="_blank">', xtitles[i],'</a></p>'))
 } 
 ```
 
 
-
-<img src='https://www.oucru.org/wp-content/uploads/2022/10/oucru_light.png' width=100 style="position:absolute; bottom: 50px; left: 5vw">
+<img src='https://www.oucru.org/wp-content/uploads/2022/10/oucru_light.png' width=100 style="position:absolute; bottom: 50px;">
