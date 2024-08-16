@@ -70,4 +70,4 @@ for (i in seq_along(x)){
 
 
 <img src='https://www.oucru.org/wp-content/uploads/2022/10/oucru_light.png' width=100 style="position:absolute; bottom: 5vh; pointer-events:none">
-<p style="position: absolute; bottom: 5vh; right: 2vw; padding-right: 2vh; pointer-events:none">Trinh Dong and the Biostatistic Group, 2024</p>
+<p style="position: absolute; bottom: 5vh; right: 2vw; padding-right: 2vh; max-width: calc(90vw - 100px); min-width: 100px; pointer-events:none">Trinh Dong and the Biostatistic Group, 2024</p>
