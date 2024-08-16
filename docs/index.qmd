@@ -46,7 +46,7 @@ execute:
     a:active{
         color: #a7a7a7;
     }
- 		@media screen and (max-width: 400px) {
+ 		@media screen and (max-width: 600px) {
 			.ws-only {
 				display: none;
 			}
