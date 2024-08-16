@@ -31,13 +31,12 @@ execute:
        
     }
     div.file-list:hover{
-        margin-left: -9px;
         border-color: #fff;
         color: #fff;  
     }
     div.file-list:active{
         border-color: #a7a7a7;
-        margin-left: -10px;
+        margin-left: -9px;
     }
     a {
         padding:0; margin:0;
