@@ -25,7 +25,7 @@ execute:
     div.file-list{
         display:block;
         margin-left: -10px;
-        padding: 10px 10px 0px 10px;
+        padding: 10px 10px 10px 10px;
         transition: all linear .2s;
         border-left: 3px solid transparent;
        
@@ -60,6 +60,7 @@ execute:
 
 <div id='master-body'>
 
+<div class='file-list'><a href="NormalDist" target="_blank">Lecture: Normal Distribution</a></div>
 ```{r}
 #| output: asis
 x = list.files(pattern='html$', recursive=TRUE)
